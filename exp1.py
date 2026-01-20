@@ -1,0 +1,6 @@
+name=input("Enter your name : ")
+score=input("Enter your 12th score : ")
+UIN=input("Enter your UIN : ")
+print(f"Hello!, {name}")
+print(f"My UIN is {UIN}")
+print(f"I scored {score} percent in 12th")
