@@ -1,0 +1,49 @@
+print(" 251A018 , 16/2/26 ")
+
+print("---------MENU---------")
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Modulus")
+print("5.Division")
+
+def add(num1,num2):
+    sum=num1+num2
+    print("Addition = ",sum)
+
+def sub(num1,num2):
+    minus=num1-num2
+    print("Subtraction = ",minus)
+
+def mul(num1,num2):
+    multiply=num1*num2
+    print("Multiplication = ",multiply)
+
+def mod(num1,num2):
+    rem=num1%num2
+    print("Modulus = ",rem)
+
+def div(num1,num2):
+    if num2==0:
+        print("Value 2 should be greater then zero.")
+        return
+    else:
+        division=num1/num2
+        print("Division = ",division)
+
+value1=int(input("Enter first value :"))
+value2=int(input("Enter second value :"))
+choice=int(input("Enter your choice :"))
+
+if choice==1:
+    add(value1,value2)
+elif choice==2:
+    sub(value1,value2)
+elif choice==3:
+    mul(value1,value2)
+elif choice==4:
+    mod(value1,value2)
+elif choice==5:
+    div(value1,value2)
+else:
+    print("Invalid choice.")
